@@ -28,6 +28,8 @@ public class Payroll
 		if(payroll.Percentage())
 		{
 			log.info("login test is pass");
+			
+			System.out.println("Test");
 		}
 		else{
 			Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");
