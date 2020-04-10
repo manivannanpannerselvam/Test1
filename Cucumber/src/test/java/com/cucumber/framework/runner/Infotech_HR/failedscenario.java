@@ -23,8 +23,8 @@ outputFolder = "target")
 
 @CucumberOptions(strict=true, features = {"@target/rerun.txt" }, glue = {
 		"classpath:com.cucumber.framework.stepdefinition",
-"classpath:com.cucumber.framework.helper" }, plugin = {"pretty:STDOUT","html:C:\\Users\\MANIVANNAN\\Downloads\\InfoTech-develop\\InfoTech-develop\\Reports\\cucumber-pretty1",
-	    "json:C:\\Users\\MANIVANNAN\\Downloads\\InfoTech-develop\\InfoTech-develop\\Reports\\cucumber.json","com.cucumber.listener.ExtentCucumberFormatter:C:\\Users\\MANIVANNAN\\Downloads\\InfoTech-develop\\InfoTech-develop\\Reports\\report.html","rerun:target/rerun1.txt"}
+"classpath:com.cucumber.framework.helper" }, plugin = {"pretty", "html:target/cucumber-reports",
+	    "json:target/cucumber.json","rerun:target/rerun1.txt"}
 //,tags = {"@PO"}
 )
 

@@ -2,13 +2,16 @@ package com.cucumber.framework.stepdefinition.IMDb_step;
 
 import java.util.List;
 
+
 //import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import com.cucumber.framework.IMDb_page.Search_test_page;
 import com.cucumber.framework.configreader.ObjectRepo;
 import com.cucumber.framework.helper.TestBase.TestBase;
+
 
 
 import cucumber.api.java.en.Given;
@@ -55,6 +58,7 @@ List<WebElement> search_dropdown = TestBase.driver.findElements(By.xpath(".//div
 		else
 		{
 			System.out.println("Fail");
+			Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");
 		}
 	}
 }
@@ -77,7 +81,9 @@ public void verify_proper_message_should_be_displayed() throws Throwable {
 	}
 	else
 	{
-		System.out.println("Fail");
+		System.out.println(" fail ");
+		Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");	 
+		 
 	}
 }
 @Then("^Enter the Data in search text field \"([^\"]*)\"$")
@@ -97,6 +103,8 @@ public void verify_the_text_and_number_should_be_displayed_in_search_textbox(Str
 	    else
 	    {
 	    	System.out.println("Fail");
+	    
+	    	  Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");
 	    	
 	    }
 }
@@ -120,6 +128,8 @@ public void verify_no_result_found_alert_message_should_be_display(String arg1) 
     else
     {
     	System.out.println("Fail");
+    	
+    	  Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");
     }
 }
 @Then("^user should be edit the search field$")
@@ -140,6 +150,8 @@ public void verify_New_search_data_should_be_displayed_in_search_field(String ar
     else
     {
     	System.out.println("Fail");
+    	
+    	  Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");
     	
     }
 }

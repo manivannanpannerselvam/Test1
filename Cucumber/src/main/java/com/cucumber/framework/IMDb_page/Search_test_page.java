@@ -73,7 +73,7 @@ public class Search_test_page {
 	{
 		//return new GenericHelper().isDisplayed(successMsgObject);
 		
-		return new GenericHelper().getElementText(search_field);
+		return new GenericHelper().getElementText(Empty_search_data);
 	}
 	public String verify_search_getvalues()
 	{

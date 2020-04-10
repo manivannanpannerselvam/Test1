@@ -1,5 +1,5 @@
-@IMDB_search_Functionality
-Feature: verify the IMDB_Search_Functionality
+@IMDB_Top_Rated_show
+Feature: verify the Top Rated show_Functionality
 
  
   Scenario: Verify the Top Rated show icon

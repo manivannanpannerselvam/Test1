@@ -114,7 +114,7 @@ public class TestBase {
 	public void after(Scenario scenario) throws Exception 
 	{
 	
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		
 		 if (scenario.isFailed()) {
 		      // Take a screenshot...

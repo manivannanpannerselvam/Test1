@@ -2,14 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite111">
 
-	<test name="useraccess_runner_PO_and_login_forgot_po">
+	<test name="Question_1">
 		<classes>
-			<class name="com.cucumber.framework.runner.UserAccess.useraccess_runner"/>
+			<class name="com.cucumber.framework.runner.IMDb.Question_1"/>
 			
-		</classes>
+		</classes> 
 	</test>
-	  
-	  
+	  <!--  
+	  <test name="Question_2">
+		<classes>
+			<class name="com.cucumber.framework.runner.IMDb.Question_2"/>
+			
+		</classes> 
+	</test>
+	-->
 	  
 	  <test name="Login_failed">
 		<classes>

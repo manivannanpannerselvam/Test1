@@ -2,6 +2,7 @@ package com.cucumber.framework.stepdefinition.IMDb_step;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import com.cucumber.framework.IMDb_page.Search_test_page;
 import com.cucumber.framework.IMDb_page.Top_Rated_show_page;
@@ -36,11 +37,12 @@ public void verify_Top_Rated_shows_screen_is_displayed(String arg1) throws Throw
 	Movie_page= new Top_Rated_show_page(TestBase.driver);
 	if(Movie_page.verify_Top_rated_show_screen().contains(arg1))
 	{
-		System.out.println("Passsssssssssssssssssssss         ");
+		System.out.println("Pass");
 	}
 	else
 	{
-		System.out.println("Failllllllllllllllllllllllllllllllll         ");
+		System.out.println(" ----> fail ");
+		  Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");
 	}
 }
 @Then("^click the Game of Thrones The Last Watch link$")
@@ -62,6 +64,8 @@ public void verify_the_Title_of_the_selected_episode(String arg1) throws Throwab
 	else
 	{
 		System.out.println("Fail");
+		
+		  Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");
 	}
 	
 }
@@ -77,6 +81,9 @@ public void verify_the_Rating_of_the_Game_of_Thrones() throws Throwable {
 	else
 	{
 		System.out.println("Fail");
+		
+		
+		  Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");
 	}
 }
 
@@ -92,6 +99,8 @@ public void verify_the_number_of_review_in_Game_of_Thrones() throws Throwable {
 	else
 	{
 		System.out.println("Fail");
+
+		  Assert.assertTrue(false, this.getClass().getSimpleName()+" is fail");
 	}
 }
 

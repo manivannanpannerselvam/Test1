@@ -3,7 +3,7 @@ package com.cucumber.framework.configreader;
 
 import java.util.Properties;
 
-import org.apache.log4j.Level;
+
 
 import com.cucumber.framework.configuration.browser.BrowserType;
 import com.cucumber.framework.utility.ResourceHelper;
@@ -47,13 +47,6 @@ public class PropertyFileReader implements ConfigReader{
 		return Integer.parseInt(prop.getProperty("ExplicitWait"));
 	}
 
-	public String getDbType() {
-		return prop.getProperty("DataBase.Type");
-	}
-
-	public String getDbConnStr() {
-		return prop.getProperty("DtaBase.ConnectionStr");
-	}
 
 	public BrowserType getBrowser() {
 		return BrowserType.valueOf(prop.getProperty("Browser"));
