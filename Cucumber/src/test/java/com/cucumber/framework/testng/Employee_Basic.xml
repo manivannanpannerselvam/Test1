@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Employee Basic Details">
+    
+    
+     
+    
+    <test name="Basic_Employee_Details">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.Employee_Sanity"/>
+			
+		</classes>
+	</test>
+	
+	 <test name="Login_failed">
+		<classes>
+			<class name="com.cucumber.framework.runner.Infotech_HR.failedscenario"/>
+			
+		</classes>
+	</test>
+ 
+    
+    	  <!--
+    
+     
+<test name="Duplicate_Employe_Details">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.E_leave_All_Approvals"/>
+			
+		</classes>
+	</test>
+	
+
+	 
+	
+	<test name="E_TMS_login">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.E_TMS_login"/>
+			
+		</classes>
+	</test>
+ 
+
+<test name="ECLAIMS">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.ECLAIMS"/>
+			
+		</classes>
+	</test>
+
+	 
+	
+<test name="Edit_Employee_Details">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.Edit_Employee_Details"/>
+			
+		</classes>
+	</test>
+	
+  
+	
+	
+	<test name="EpayRoll_Account">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.EpayRoll_Account"/>
+			
+		</classes>
+	</test>
+	 
+	
+	<test name="EPayroll_Basic">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.EPayroll_Basic"/>
+			
+		</classes>
+	</test>
+	
+	 
+	
+	 
+	<test name="Epayroll_Duplicate_idandemaii">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.Epayroll_Duplicate_idandemaii"/>
+			
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+	<test name="EpayRoll_fund">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.EpayRoll_fund"/>
+			
+		</classes>
+	</test>
+	
+	
+	
+	<test name="EpayRoll_HourlyRate">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.EpayRoll_HourlyRate"/>
+			
+		</classes>
+	</test>
+	
+	
+	
+	<test name="Epayroll_Payday">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.Epayroll_Payday"/>
+			
+		</classes>
+	</test>
+	
+	
+	
+	
+	<test name="EPayroll_Sal">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.EPayroll_Sal"/>
+			
+		</classes>
+	</test>
+	
+	
+
+	
+	<test name="EPayroll">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.EPayroll"/>
+			
+		</classes>
+	</test>
+	
+	
+
+	<test name="EpayRollEmployee_Type">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.EpayRollEmployee_Type"/>
+			
+		</classes>
+	</test>
+	
+	
+	
+	<test name="EpayrollPercentage">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.EpayrollPercentage"/>
+			
+		</classes>
+	</test>
+	
+	 
+	<test name="ETMS">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.ETMS"/>
+			
+		</classes>
+	</test>
+	
+	
+	<test name="Mobile">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.Mobile"/>
+			
+		</classes>
+	</test>
+	
+	
+	
+	<test name="Leave_Software_runner">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.Leave_Software_runner"/>
+			
+		</classes>
+	</test>
+	
+
+	 
+	
+	<test name="Negative_Scenario_Employee_Runner">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.Negative_Scenario_Employee_Runner"/>
+			
+		</classes>
+	</test>
+	
+	
+	
+	<test name="E_leave_All_Approvals">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.E_leave_All_Approvals"/>
+			
+		</classes>
+	</test>
+	
+	<test name="E_leave_child_Details">
+		<classes>
+			<class name="com.cucumber.framework.runner.Employee_Basic_Details.E_leave_child_Details"/>
+			
+		</classes>
+	</test>
+	-->   
+	
+	
+
+	
+</suite> 

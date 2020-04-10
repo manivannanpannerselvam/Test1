@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite111]">
+  <test thread-count="5" name="useraccess_runner_PO_and_login_forgot_po(failed)">
+    <classes>
+      <class name="com.cucumber.framework.runner.UserAccess.useraccess_runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="6 7"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.framework.runner.UserAccess.useraccess_runner -->
+    </classes>
+  </test> <!-- useraccess_runner_PO_and_login_forgot_po(failed) -->
+</suite> <!-- Failed suite [Suite111] -->
