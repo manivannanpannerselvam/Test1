@@ -8,14 +8,14 @@
 			
 		</classes> 
 	</test>
-	  <!--  
+	  
 	  <test name="Question_2">
 		<classes>
 			<class name="com.cucumber.framework.runner.IMDb.Question_2"/>
 			
 		</classes> 
 	</test>
-	-->
+	
 	  
 	  <test name="Login_failed">
 		<classes>

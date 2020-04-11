@@ -94,7 +94,7 @@ public class Create_new_account_step {
 		create_account= new Create_new_account_page(TestBase.driver);
 		
 		create_account.Menu_button();
-		
+		Thread.sleep(1200);
 		create_account.sigin_out();
 	}
 	
