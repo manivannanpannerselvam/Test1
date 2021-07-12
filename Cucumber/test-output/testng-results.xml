@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite111" duration-ms="510278" started-at="2020-04-11T04:17:13Z" finished-at="2020-04-11T04:25:43Z">
+  <suite name="Suite111" duration-ms="142788" started-at="2021-07-12T07:34:39Z" finished-at="2021-07-12T07:37:02Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@58a90037]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_2@4148db48]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@49e202ad]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@314c508a]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Question_1" duration-ms="332504" started-at="2020-04-11T04:17:13Z" finished-at="2020-04-11T04:22:45Z">
+    <test name="Question_1" duration-ms="110445" started-at="2021-07-12T07:34:39Z" finished-at="2021-07-12T07:36:29Z">
       <class name="com.cucumber.framework.runner.IMDb.Question_1">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@58a90037]" name="setUpClass" is-config="true" duration-ms="674" started-at="2020-04-11T04:17:13Z" finished-at="2020-04-11T04:17:13Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@58a90037]" name="setUpClass" is-config="true" duration-ms="667" started-at="2021-07-12T07:34:39Z" finished-at="2021-07-12T07:34:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@58a90037]" name="feature" duration-ms="197322" started-at="2020-04-11T04:17:14Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-11T04:20:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[verify the IMDB_Search_Functionality]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@58a90037]" name="feature" duration-ms="134011" started-at="2020-04-11T04:20:31Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-11T04:22:45Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@58a90037]" name="feature" duration-ms="106672" started-at="2021-07-12T07:34:40Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-07-12T07:36:26Z">
           <params>
             <param index="0">
               <value>
@@ -35,45 +23,117 @@
               </value>
             </param>
           </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: Top_Rated_movie_step is fail expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Top_Rated_movie_step is fail expected [true] but found [false]
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: Top_Rated_movie_step is fail expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.cucumber.framework.stepdefinition.IMDb_step.Top_Rated_movie_step.verify_Top_Rated_shows_screen_is_displayed(Top_Rated_movie_step.java:45)
+at ✽.Then Verify Top Rated shows screen is displayed "Top Rated TV Showss"(featurefile/IMDB/Top_Rated_shows.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@58a90037]" name="tearDownClass" is-config="true" duration-ms="103" started-at="2020-04-11T04:22:45Z" finished-at="2020-04-11T04:22:45Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_1@58a90037]" name="tearDownClass" is-config="true" duration-ms="2906" started-at="2021-07-12T07:36:26Z" finished-at="2021-07-12T07:36:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.cucumber.framework.runner.IMDb.Question_1 -->
     </test> <!-- Question_1 -->
-    <test name="Question_2" duration-ms="177530" started-at="2020-04-11T04:22:45Z" finished-at="2020-04-11T04:25:43Z">
-      <class name="com.cucumber.framework.runner.IMDb.Question_2">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_2@4148db48]" name="setUpClass" is-config="true" duration-ms="44" started-at="2020-04-11T04:22:45Z" finished-at="2020-04-11T04:22:45Z">
+    <test name="Login_failed" duration-ms="32110" started-at="2021-07-12T07:36:29Z" finished-at="2021-07-12T07:37:02Z">
+      <class name="com.cucumber.framework.runner.Infotech_HR.failedscenario">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@314c508a]" name="setUpClass" is-config="true" duration-ms="48" started-at="2021-07-12T07:36:29Z" finished-at="2021-07-12T07:36:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_2@4148db48]" name="feature" duration-ms="177436" started-at="2020-04-11T04:22:45Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-11T04:25:43Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@314c508a]" name="feature" duration-ms="31830" started-at="2021-07-12T07:36:30Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-07-12T07:37:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[verify the account by filling the registration]]>
+                <![CDATA[verify the Top Rated show_Functionality]]>
               </value>
             </param>
           </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: Top_Rated_movie_step is fail expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Top_Rated_movie_step is fail expected [true] but found [false]
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: Top_Rated_movie_step is fail expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.cucumber.framework.stepdefinition.IMDb_step.Top_Rated_movie_step.verify_Top_Rated_shows_screen_is_displayed(Top_Rated_movie_step.java:45)
+at ✽.Then Verify Top Rated shows screen is displayed "Top Rated TV Showss"(featurefile/IMDB/Top_Rated_shows.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.IMDb.Question_2@4148db48]" name="tearDownClass" is-config="true" duration-ms="21" started-at="2020-04-11T04:25:43Z" finished-at="2020-04-11T04:25:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- com.cucumber.framework.runner.IMDb.Question_2 -->
-    </test> <!-- Question_2 -->
-    <test name="Login_failed" duration-ms="113" started-at="2020-04-11T04:25:43Z" finished-at="2020-04-11T04:25:43Z">
-      <class name="com.cucumber.framework.runner.Infotech_HR.failedscenario">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@49e202ad]" name="setUpClass" is-config="true" duration-ms="73" started-at="2020-04-11T04:25:43Z" finished-at="2020-04-11T04:25:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@49e202ad]" name="tearDownClass" is-config="true" duration-ms="28" started-at="2020-04-11T04:25:43Z" finished-at="2020-04-11T04:25:43Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.Infotech_HR.failedscenario@314c508a]" name="tearDownClass" is-config="true" duration-ms="212" started-at="2021-07-12T07:37:01Z" finished-at="2021-07-12T07:37:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

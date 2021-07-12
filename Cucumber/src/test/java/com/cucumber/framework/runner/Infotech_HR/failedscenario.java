@@ -23,9 +23,9 @@ outputFolder = "target")
 
 @CucumberOptions(strict=true, features = {"@target/rerun.txt" }, glue = {
 		"classpath:com.cucumber.framework.stepdefinition",
-"classpath:com.cucumber.framework.helper" }, plugin = {"pretty", "html:target/cucumber-reports",
-	    "json:target/cucumber.json","rerun:target/rerun1.txt"}
-//,tags = {"@PO"}
+"classpath:com.cucumber.framework.helper" }, plugin = {"pretty:STDOUT","html:C:\\Users\\MANIVANNAN\\git\\tests\\Cucumber\\Reports\\cucumber-pretty_failed_testcase",
+	    "json:C:\\Users\\MANIVANNAN\\git\\tests\\Cucumber\\Reports\\cucumber.json","com.cucumber.listener.ExtentCucumberFormatter:C:\\Users\\MANIVANNAN\\git\\tests\\Cucumber\\Reports\\report_failed.html","rerun:target/rerun.txt"}
+
 )
 
 

@@ -1,121 +1,87 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefile/IMDB/Create_new_account.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefile/IMDB/Top_Rated_shows.feature");
 formatter.feature({
   "line": 2,
-  "name": "verify the account by filling the registration",
+  "name": "verify the Top Rated show_Functionality",
   "description": "",
-  "id": "verify-the-account-by-filling-the-registration",
+  "id": "verify-the-top-rated-show-functionality",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@IMDB_Create_account"
+      "name": "@IMDB_Top_Rated_show"
     }
   ]
 });
-formatter.scenarioOutline({
-  "line": 4,
-  "name": "Verify the   account by filling the registration",
+formatter.before({
+  "duration": 46924515100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 5,
+  "name": "Verify the Top Rated show icon",
   "description": "",
-  "id": "verify-the-account-by-filling-the-registration;verify-the---account-by-filling-the-registration",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "verify-the-top-rated-show-functionality;verify-the-top-rated-show-icon",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "open the valid url in IMDb application",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "click the sigin icon",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 7,
-  "name": "click the create new button",
+  "name": "click the Menu icon in IMDb screen",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "Enter the UserName in username field \"\u003cUsername\u003e\"",
+  "name": "click the Top Rated Shows icon",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "Enter the Email id in Eamil field \"\u003cEmailid\u003e\"",
+  "name": "Verify Top Rated shows screen is displayed \"Top Rated TV Showss\"",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 10,
-  "name": "Enter the password in password field \"\u003cpassword\u003e\"",
-  "keyword": "Then "
+formatter.match({
+  "location": "Search_Test_step.open_the_valid_url_in_IMDb_application()"
 });
-formatter.step({
-  "line": 11,
-  "name": "Enter the reenter password \"\u003cpassword\u003e\"",
-  "keyword": "Then "
+formatter.result({
+  "duration": 24070172800,
+  "status": "passed"
 });
-formatter.step({
-  "line": 12,
-  "name": "click the Create your ImDb account",
-  "keyword": "Then "
+formatter.match({
+  "location": "Top_Rated_movie_step.click_the_Menu_icon_in_IMDb_screen()"
 });
-formatter.step({
-  "line": 13,
-  "name": "click the Sign out button",
-  "keyword": "Then "
+formatter.result({
+  "duration": 3547119700,
+  "status": "passed"
 });
-formatter.examples({
-  "line": 15,
-  "name": "",
-  "description": "",
-  "id": "verify-the-account-by-filling-the-registration;verify-the---account-by-filling-the-registration;",
-  "rows": [
+formatter.match({
+  "location": "Top_Rated_movie_step.click_the_Top_Rated_Shows_icon()"
+});
+formatter.result({
+  "duration": 17679567300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
     {
-      "cells": [
-        "Username",
-        "Emailid",
-        "password"
-      ],
-      "line": 16,
-      "id": "verify-the-account-by-filling-the-registration;verify-the---account-by-filling-the-registration;;1"
-    },
-    {
-      "cells": [
-        "jlgetertertertertetretrhlet",
-        "@example.com",
-        "@password"
-      ],
-      "line": 17,
-      "id": "verify-the-account-by-filling-the-registration;verify-the---account-by-filling-the-registration;;2"
-    },
-    {
-      "cells": [
-        "test",
-        "@examplet.com",
-        "@passworda"
-      ],
-      "line": 18,
-      "id": "verify-the-account-by-filling-the-registration;verify-the---account-by-filling-the-registration;;3"
-    },
-    {
-      "cells": [
-        "testplan",
-        "@examples.com",
-        "@passwords"
-      ],
-      "line": 19,
-      "id": "verify-the-account-by-filling-the-registration;verify-the---account-by-filling-the-registration;;4"
-    },
-    {
-      "cells": [
-        "testcase",
-        "@exampless.com",
-        "@passwordd"
-      ],
-      "line": 20,
-      "id": "verify-the-account-by-filling-the-registration;verify-the---account-by-filling-the-registration;;5"
+      "val": "Top Rated TV Showss",
+      "offset": 44
     }
   ],
-  "keyword": "Examples"
+  "location": "Top_Rated_movie_step.verify_Top_Rated_shows_screen_is_displayed(String)"
+});
+formatter.result({
+  "duration": 134291700,
+  "error_message": "java.lang.AssertionError: Top_Rated_movie_step is fail expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertTrue(Assert.java:44)\r\n\tat com.cucumber.framework.stepdefinition.IMDb_step.Top_Rated_movie_step.verify_Top_Rated_shows_screen_is_displayed(Top_Rated_movie_step.java:45)\r\n\tat ✽.Then Verify Top Rated shows screen is displayed \"Top Rated TV Showss\"(featurefile/IMDB/Top_Rated_shows.feature:9)\r\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded0.png");
+formatter.after({
+  "duration": 5815491000,
+  "status": "passed"
+});
 });
